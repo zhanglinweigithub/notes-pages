@@ -1,0 +1,26 @@
+import{_ as s,o as a,c as n,a as i}from"./app-Vg0IViah.js";const l={},e=i(`<h1 id="代码块" tabindex="-1"><a class="header-anchor" href="#代码块"><span>代码块</span></a></h1><p>在<code>Java</code>类下，使用 <code>{ }</code> 括起来的代码被称为代码块</p><ul><li>局部代码块： <ul><li>位置：方法中定义</li><li>作用：限定变量的生命周期，及早释放，提高内存利用率</li></ul></li><li>构造代码块： <ul><li>位置：类中方法外定义</li><li>特点：每次构造方法执行的时，都会执行该代码块中的代码，并且在构造方法执行前执行</li><li>作用：将多个构造方法中相同的代码，抽取到构造代码块中，提高代码的复用性、初始化数据。</li></ul></li><li>静态代码块： <ul><li>位置：类中方法外定义</li><li>特点：要通过<code>static</code>关键字修饰，随着类的加载而加载，并且只执行一次</li><li>作用：在类加载的时候做一些数据初始化的操作</li></ul></li><li>同步代码块</li></ul><div class="language-java line-numbers-mode" data-ext="java" data-title="java"><pre class="shiki shiki-themes dark-plus dark-plus" style="background-color:#1E1E1E;--shiki-dark-bg:#1E1E1E;color:#D4D4D4;--shiki-dark:#D4D4D4;" tabindex="0"><code><span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">// 静态代码块</span></span>
+<span class="line"><span style="color:#569CD6;--shiki-dark:#569CD6;">public</span><span style="color:#569CD6;--shiki-dark:#569CD6;"> class</span><span style="color:#4EC9B0;--shiki-dark:#4EC9B0;"> User</span><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;"> {</span></span>
+<span class="line"><span style="color:#569CD6;--shiki-dark:#569CD6;">    static</span><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;"> {</span></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">        // 一些初始化操作</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">    }</span></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">    // ...</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">// 构造代码块</span></span>
+<span class="line"><span style="color:#569CD6;--shiki-dark:#569CD6;">public</span><span style="color:#569CD6;--shiki-dark:#569CD6;"> class</span><span style="color:#4EC9B0;--shiki-dark:#4EC9B0;"> User</span><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;"> {</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">    {</span></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">        // ...</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">    }</span></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">    // ...</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">// 局部代码块</span></span>
+<span class="line"><span style="color:#569CD6;--shiki-dark:#569CD6;">public</span><span style="color:#569CD6;--shiki-dark:#569CD6;"> class</span><span style="color:#4EC9B0;--shiki-dark:#4EC9B0;"> User</span><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;"> {</span></span>
+<span class="line"><span style="color:#569CD6;--shiki-dark:#569CD6;">    public</span><span style="color:#4EC9B0;--shiki-dark:#4EC9B0;"> void</span><span style="color:#DCDCAA;--shiki-dark:#DCDCAA;"> method</span><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">() {</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">        {</span></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">            // ...</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">        }</span></span>
+<span class="line"><span style="color:#6A9955;--shiki-dark:#6A9955;">        // ...</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">    }</span></span>
+<span class="line"><span style="color:#D4D4D4;--shiki-dark:#D4D4D4;">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4),p=[e];function r(c,d){return a(),n("div",null,p)}const D=s(l,[["render",r],["__file","CodeBlock.html.vue"]]),t=JSON.parse('{"path":"/Grammar/Java/Java/CodeBlock.html","title":"代码块","lang":"zh-CN","frontmatter":{"category":"语法"},"headers":[],"git":{"createdTime":1708330205000,"updatedTime":1708873062000,"contributors":[{"name":"zhanglinwei","email":"3498729975@qq.com","commits":2}]},"readingTime":{"minutes":0.87,"words":261},"filePathRelative":"Grammar/Java/Java/CodeBlock.md","localizedDate":"2024年2月19日"}');export{D as comp,t as data};
